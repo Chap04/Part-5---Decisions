@@ -20,6 +20,7 @@ namespace Part_5___Decisions
 
         private void txtInput_TextChanged(object sender, EventArgs e)
         {
+            //If statements
             userAge = Convert.ToInt32(txtInput.Text);
             lblOutput.Text =
         }
