@@ -31,11 +31,14 @@
             this.txtInput = new System.Windows.Forms.TextBox();
             this.lblInstuctions = new System.Windows.Forms.Label();
             this.lblOutput = new System.Windows.Forms.Label();
+            this.lblHurricaneInstructions = new System.Windows.Forms.Label();
+            this.txtHurricaneInput = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(12, 107);
+            this.txtInput.Location = new System.Drawing.Point(31, 107);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(268, 20);
             this.txtInput.TabIndex = 0;
@@ -57,16 +60,42 @@
             this.lblOutput.Size = new System.Drawing.Size(268, 106);
             this.lblOutput.TabIndex = 2;
             // 
+            // lblHurricaneInstructions
+            // 
+            this.lblHurricaneInstructions.AutoSize = true;
+            this.lblHurricaneInstructions.Location = new System.Drawing.Point(418, 60);
+            this.lblHurricaneInstructions.Name = "lblHurricaneInstructions";
+            this.lblHurricaneInstructions.Size = new System.Drawing.Size(184, 13);
+            this.lblHurricaneInstructions.TabIndex = 3;
+            this.lblHurricaneInstructions.Text = "Enter The Category Of The Hurricane";
+            // 
+            // txtHurricaneInput
+            // 
+            this.txtHurricaneInput.Location = new System.Drawing.Point(369, 107);
+            this.txtHurricaneInput.Name = "txtHurricaneInput";
+            this.txtHurricaneInput.Size = new System.Drawing.Size(268, 20);
+            this.txtHurricaneInput.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(369, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(268, 106);
+            this.label1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 257);
+            this.ClientSize = new System.Drawing.Size(669, 257);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtHurricaneInput);
+            this.Controls.Add(this.lblHurricaneInstructions);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.lblInstuctions);
             this.Controls.Add(this.txtInput);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Part 5";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,6 +106,9 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Label lblInstuctions;
         private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.Label lblHurricaneInstructions;
+        private System.Windows.Forms.TextBox txtHurricaneInput;
+        private System.Windows.Forms.Label label1;
     }
 }
 

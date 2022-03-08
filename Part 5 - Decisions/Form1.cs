@@ -12,6 +12,7 @@ namespace Part_5___Decisions
 {
     public partial class Form1 : Form
     {
+        //Age Stages
         int userAge;
         public Form1()
         {
@@ -52,8 +53,40 @@ namespace Part_5___Decisions
                 lblOutput.Text = ("Error! Non-numerical input not accepted");
             }
 
-        
+
+            //Hurricane Codes - Switch Statements
+            //https://www.programiz.com/csharp-programming/switch-statement
+            // Use this to figure out Switch statements
+            //Replace "Console.Readline" with "int Ex = Convert.ToInt32(txtEx.Text);"
+
+
+            // char ch;
+            //Console.WriteLine("Enter an alphabet");
+            //ch = Convert.ToChar(Console.ReadLine());
+
+            //switch (Char.ToLower(ch))
+            //{
+                //case 'a':
+                    //Console.WriteLine("Vowel");
+                    //break;
+                //case 'e':
+                    //Console.WriteLine("Vowel");
+                    //break;
+                //case 'i':
+                    //Console.WriteLine("Vowel");
+                    //break;
+                //case 'o':
+                    //Console.WriteLine("Vowel");
+                    //break;
+                //case 'u':
+                    //Console.WriteLine("Vowel");
+                   // break;
+                //default:
+                    //Console.WriteLine("Not a vowel");
+                    //break;
+            //}
 
         }
+
     }
 }
