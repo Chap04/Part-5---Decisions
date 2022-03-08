@@ -20,31 +20,39 @@ namespace Part_5___Decisions
 
         private void txtInput_TextChanged(object sender, EventArgs e)
         {
-            userAge = Convert.ToInt32(txtInput.Text);
-            if (userAge<=5)
+            if (Int32.TryParse(txtInput.Text, out userAge))
             {
-                lblOutput.Text = ("Toddler");
+                if (userAge <= 5)
+                {
+                    lblOutput.Text = ("Toddler");
+                }
+                else if (userAge > 5 && userAge <= 10)
+                {
+                    lblOutput.Text = ("Child");
+                }
+                else if (userAge > 10 && userAge <= 12)
+                {
+                    lblOutput.Text = ("Preteen");
+                }
+                else if (userAge > 12 && userAge <= 18)
+                {
+                    lblOutput.Text = ("Teenager");
+                }
+                else if (userAge > 18)
+                {
+                    lblOutput.Text = ("Adult");
+                }
+                else if (userAge < 0)
+                {
+                    lblOutput.Text = ("Error");
+                }
             }
-            else if (userAge > 5 && userAge <= 10)
+            else
             {
-                lblOutput.Text = ("Child");
+                lblOutput.Text = ("Error! Non-numerical input not accepted");
             }
-            else if (userAge > 10 && userAge <= 12)
-            {
-                lblOutput.Text = ("Preteen");
-            }
-            else if (userAge > 12 && userAge <= 18)
-            {
-                lblOutput.Text = ("Teenager");
-            }
-            else if (userAge > 18)
-            {
-                lblOutput.Text = ("Adult");
-            }
-            else if (userAge <= 0)
-            {
-                lblOutput.Text = ("Error");
-            }
+
+        
 
         }
     }
