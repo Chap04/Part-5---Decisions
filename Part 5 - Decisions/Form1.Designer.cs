@@ -33,7 +33,7 @@
             this.lblOutput = new System.Windows.Forms.Label();
             this.lblHurricaneInstructions = new System.Windows.Forms.Label();
             this.txtHurricaneInput = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHurricaneOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtInput
@@ -75,20 +75,21 @@
             this.txtHurricaneInput.Name = "txtHurricaneInput";
             this.txtHurricaneInput.Size = new System.Drawing.Size(268, 20);
             this.txtHurricaneInput.TabIndex = 4;
+            this.txtHurricaneInput.TextChanged += new System.EventHandler(this.txtHurricaneInput_TextChanged);
             // 
-            // label1
+            // lblHurricaneOutput
             // 
-            this.label1.Location = new System.Drawing.Point(369, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 106);
-            this.label1.TabIndex = 5;
+            this.lblHurricaneOutput.Location = new System.Drawing.Point(369, 142);
+            this.lblHurricaneOutput.Name = "lblHurricaneOutput";
+            this.lblHurricaneOutput.Size = new System.Drawing.Size(268, 106);
+            this.lblHurricaneOutput.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 257);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblHurricaneOutput);
             this.Controls.Add(this.txtHurricaneInput);
             this.Controls.Add(this.lblHurricaneInstructions);
             this.Controls.Add(this.lblOutput);
@@ -108,7 +109,7 @@
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Label lblHurricaneInstructions;
         private System.Windows.Forms.TextBox txtHurricaneInput;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHurricaneOutput;
     }
 }
 

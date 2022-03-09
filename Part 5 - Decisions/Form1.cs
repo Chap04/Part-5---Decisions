@@ -14,6 +14,7 @@ namespace Part_5___Decisions
     {
         //Age Stages
         int userAge;
+        int hurricaneCategory;
         public Form1()
         {
             InitializeComponent();
@@ -54,39 +55,46 @@ namespace Part_5___Decisions
             }
 
 
+          
+
+        }
+
+        private void txtHurricaneInput_TextChanged(object sender, EventArgs e)
+        {
             //Hurricane Codes - Switch Statements
             //https://www.programiz.com/csharp-programming/switch-statement
             // Use this to figure out Switch statements
             //Replace "Console.Readline" with "int Ex = Convert.ToInt32(txtEx.Text);"
 
 
-            // char ch;
-            //Console.WriteLine("Enter an alphabet");
-            //ch = Convert.ToChar(Console.ReadLine());
 
-            //switch (Char.ToLower(ch))
-            //{
-                //case 'a':
-                    //Console.WriteLine("Vowel");
-                    //break;
-                //case 'e':
-                    //Console.WriteLine("Vowel");
-                    //break;
-                //case 'i':
-                    //Console.WriteLine("Vowel");
-                    //break;
-                //case 'o':
-                    //Console.WriteLine("Vowel");
-                    //break;
-                //case 'u':
-                    //Console.WriteLine("Vowel");
-                   // break;
-                //default:
-                    //Console.WriteLine("Not a vowel");
-                    //break;
-            //}
+            if (Int32.TryParse(txtHurricaneInput.Text, out hurricaneCategory))
+            {
+                switch (hurricaneCategory)
+                {
+                    case 1:
+                        lblHurricaneOutput.Text = ("A category 1 hurricane has wind speeds of between 74 and 95 mph (64-82kt or 119-153km/h)");
+                        break;
+                    case 2:
+                        lblHurricaneOutput.Text = ("A category 2 hurricane has wind speeds of between 96 and 110 mph (83-95kt or 154-177km/h)");
+                        break;
+                    case 3:
+                        lblHurricaneOutput.Text = ("A category 3 hurricane has wind speeds of between 111 and 130 mph (96-113kt or 178-209km/h)");
+                        break;
+                    case 4:
+                        lblHurricaneOutput.Text = ("A category 4 hurricane has wind speeds of between 131 and 155 mph (114-135kt or 210-249km/h)");
+                        break;
+                    case 5:
+                        lblHurricaneOutput.Text = ("A category 5 hurricane has wind speeds of 155 mph or greater (136kt or 250km/h)");
+                        break;
+                    default:
+                        lblHurricaneOutput.Text = ("Number is too high");
+                        break;
+                }
+            }
+            else lblHurricaneOutput.Text = ("Invalid Response");
 
+            
         }
-
     }
 }
