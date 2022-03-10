@@ -62,12 +62,7 @@ namespace Part_5___Decisions
         private void txtHurricaneInput_TextChanged(object sender, EventArgs e)
         {
             //Hurricane Codes - Switch Statements
-            //https://www.programiz.com/csharp-programming/switch-statement
-            // Use this to figure out Switch statements
-            //Replace "Console.Readline" with "int Ex = Convert.ToInt32(txtEx.Text);"
-
-
-
+            
             if (Int32.TryParse(txtHurricaneInput.Text, out hurricaneCategory))
             {
                 switch (hurricaneCategory)
