@@ -1,6 +1,6 @@
 ﻿namespace Part_5___Decisions
 {
-    partial class Form1
+    partial class Part5Decisions
     {
         /// <summary>
         /// Required designer variable.
@@ -84,7 +84,7 @@
             this.lblHurricaneOutput.Size = new System.Drawing.Size(268, 106);
             this.lblHurricaneOutput.TabIndex = 5;
             // 
-            // Form1
+            // Part5Decisions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,8 +95,8 @@
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.lblInstuctions);
             this.Controls.Add(this.txtInput);
-            this.Name = "Form1";
-            this.Text = "Part 5";
+            this.Name = "Part5Decisions";
+            this.Text = "Part 5 - Decisions";
             this.ResumeLayout(false);
             this.PerformLayout();
 

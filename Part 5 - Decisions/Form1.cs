@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Part_5___Decisions
 {
-    public partial class Form1 : Form
+    public partial class Part5Decisions : Form
     {
         //Age Stages
         int userAge;
         int hurricaneCategory;
-        public Form1()
+        public Part5Decisions()
         {
             InitializeComponent();
         }
